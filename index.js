@@ -18,8 +18,8 @@ socket.on('connection', (socket, req) => {
     // Thêm client vào danh sách các client đã kết nối
     clients.add(socket);
 
-    // Gửi tin nhắn đến client khi có kết nối thành công
-    socket.send(JSON.stringify({ "message": "Chào mừng đến với WebSocket server!", "clientId": "server" }));
+    // // Gửi tin nhắn đến client khi có kết nối thành công
+    // socket.send(JSON.stringify({ "message": "Chào mừng đến với WebSocket server!", "clientId": "server" }));
 
     // Xử lý tin nhắn từ client
     socket.on('message', (message) => {
